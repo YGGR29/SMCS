@@ -1,0 +1,159 @@
+/* blog.css */
+
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(imagenes/fondo.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+
+header {
+  background-color: #4e4d4d;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+/* Estilos del menú de navegación */
+nav {
+  background-color: #4e4d4d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-top: 4px solid #017bab;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.hide {
+  display: none;
+  cursor: pointer;
+  color: white;
+}
+
+.hide i {
+  font-size: 24px;
+}
+
+/* Estilos de la sección del blog */
+.blog-posts {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.blog-post {
+  background: rgba(255, 255, 255, 0.9);
+  margin-bottom: 30px;
+  padding: 20px;
+  box-shadow: 7px 13px 37px #000;
+  border-top: 4px solid #017bab;
+  color: #4e4d4d;
+}
+
+.blog-post h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #017bab;
+}
+
+.post-meta {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.read-more:hover {
+  background-color: #017bab;
+}
+
+/* Estilos del pie de página */
+footer {
+  background-color: #4e4d4d;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer .social-links a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+footer .social-links a:hover {
+  color: #017bab;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  nav ul {
+      display: none;
+      flex-direction: column;
+      gap: 0;
+  }
+
+  .hide {
+      display: block;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+      text-align: center;
+  }
+
+  .blog-posts {
+      padding: 0 10px;
+  }
+}
+
+  

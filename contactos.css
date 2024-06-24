@@ -1,0 +1,166 @@
+/* contactos.css */
+
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(imagenes/fondo.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+
+header {
+  background-color: #4e4d4d;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+/* Estilos del menú de navegación */
+nav {
+  background-color: #4e4d4d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-top: 4px solid #017bab;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.hide {
+  display: none;
+  cursor: pointer;
+  color: white;
+}
+
+.hide i {
+  font-size: 24px;
+}
+
+/* Estilos de la sección de contacto */
+.contact-form {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 7px 13px 37px #000;
+  border-top: 4px solid #017bab;
+  color: #4e4d4d;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #017bab;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #4e4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #017bab;
+}
+
+/* Estilos del pie de página */
+footer {
+  background-color: #4e4d4d;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer .social-links a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+  color: #017bab;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .hide {
+    display: block;
+  }
+  
+  nav ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .contact-form {
+    padding: 0 10px;
+  }
+}
+
